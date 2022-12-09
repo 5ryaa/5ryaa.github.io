@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bravo</title>
+    <link rel="stylesheet" href="css/style-page1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <main>
+    <section class="sec-01">
+      <div class="container-fluid mx-auto">
+        <h2 style="font-size: 4em;" class="mb-5 mx-auto d-flex justify-content-center">BRAVO OFFICIAL WEBSITE</h2>
+        <div class="content">
+          <div class="image">
+            <img src="img/emilkul.jpg" alt="picture 1">
+          </div>
+          <div class="text-box">
+            <h3>What is Bravo?</h3>
+            <p>Bravo is the IT team for designing websites. It was founded by Emil Anata in 2022. This team consists of 6 other people.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">Why do we name Bravo?</h3>
+        <div class="content mt-5 py-3">
+          <div class="image">
+            <img src="img/bareng.jpg" alt="picture2">
+          </div>
+          <div class="text-box">
+            <h4>Explanation</h4>
+            <p>Bravo in the sense of "Brave", we named Bravo because we really dare to be different, dare to challenge, dare to be confident. Bravo fractions of 5 other IT groups.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-03">
+        <a href="page2.html" style="width: 100%;"><button class="btn btn-dark btn-block btn-lg" style="width: 100%">Go to the main page</button></a>
+    </section>
+  </main>
+    <footer>
+      <div class="text-center p-4" style="color: white; background-color: #292929;">
+    © 2021 Copyright: All Rights Reserved
+    <a href="#" style="text-decoration: none; color: white;">Bravo Team</a>
+  </div>
+    </footer>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+    //common reveal options to create reveal animations
+      ScrollReveal({
+        //reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 300
+      });
+
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
+      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+      ScrollReveal().reveal('.sec-02 .image', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('.btn', { delay: 500, origin: 'top', interval: 200 });
+      </script>
+  </body>
+</html>
